@@ -40,6 +40,12 @@ module.exports = {
         loader: 'url-loader?limit=5000',
       },
       {
+        test: /\.tsx?$/,
+        exclude: /node_modules/,
+        enforce: 'pre',
+        loader: 'eslint-loader',
+      },
+      {
         test: /\.(ts|tsx)$/,
         exclude: /node_modules/,
         loader: 'awesome-typescript-loader',
