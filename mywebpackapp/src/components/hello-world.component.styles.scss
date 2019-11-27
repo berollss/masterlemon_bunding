@@ -1,0 +1,17 @@
+$base-color: darkolivegreen;
+$media-color: papayawhip;
+
+.container {
+  background-color: $base-color;
+}
+
+.card {
+  width: 70%;
+  height: auto;
+}
+
+.media {
+  height: 344px;
+  margin: 4px;
+  background-color: $media-color;
+}
