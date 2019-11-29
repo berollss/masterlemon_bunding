@@ -8,7 +8,9 @@ const description = ' Simple app with webpack bundling.';
 ReactDOM.render(
   <div>
     <h1>Hello from React DOM</h1>
-    <HelloWorldComponent title="Bundling exercise" logoImage={logoImage} description={description} module={3}/>
+    <HelloWorldComponent title="Bundling exercise" logoImage={logoImage} description={description} module={3} />
   </div>,
   document.getElementById('root'),
 );
+
+console.log(`We are in: ${process.env.NODE_ENV}`);

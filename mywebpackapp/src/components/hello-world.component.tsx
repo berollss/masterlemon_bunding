@@ -14,7 +14,7 @@ interface Props {
   module: number;
 }
 
-export const HelloWorldComponent: React.FunctionComponent<Props> = props => {
+export const HelloWorldComponent: React.FunctionComponent<Props> = (props: Props) => {
   const { title, logoImage, description, module } = props;
   return (
     <div>
